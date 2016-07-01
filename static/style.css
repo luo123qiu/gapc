@@ -1,0 +1,42 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, input, textarea, button, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;border:0;outline:0;font-size:100%;}
+h1,h2,h3,h4,h5,h6 {font-weight:normal;}
+body {font-family:"Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", sans-serif;}
+img {border:none;}
+table {border-collapse:collapse; border-spacing:0;}
+ol, ul {list-style:none;}
+.fl {float:left;}
+.fr {float:right;}
+.hide {display:none;}
+.clx:before, .clx:after {display:table; line-height:0; content:"";}
+.clx:after {clear:both;}
+.topline {width:100%; height:5px; overflow:hidden; background:#00b0f0;}
+.list {width:100%;}
+.list li {border-bottom:1px solid #EEE; padding:15px 10px;}
+.list li:nth-child(odd) {background:#F9F9F9;}
+.list-bd {overflow:hidden; margin-bottom:2px;}
+.list-start, .list-arrow, .list-end {float:left; line-height:30px;}
+.list-start, .list-end {font-size:20px; color:#373e40;}
+.list-arrow {color:#a2b4ba; width:40px; text-align:center;}
+.list-contact {float:right; margin-top:9px;}
+.list-contact a {display:block; width:40px; line-height:40px; background:#00b38c; border-radius:50%; color:#FFF; text-decoration:none; text-align:center;}
+.list-meta {font-size:13px; color:#00b0f0; line-height:24px;}
+.list-meta span {display:inline-block; margin-right:15px;}
+.list-meta i {vertical-align:-1px; font-size:14px; margin-right:3px;}
+.list-meta span:first-child i {vertical-align:0px; font-size:16px;}
+.list-meta .nothighway {color:#999;}
+.list-remark {font-size:12px; line-height:20px;}
+.postform {width:100%; font-size:14px;}
+.postform td {padding:10px 5px; vertical-align:top; line-height:30px;}
+.postform td:first-child {width:50px; text-align:right;}
+.input, .select {border:1px solid #ccc; padding:3px;}
+.btn {background:#00b38c; color:#fff; padding:5px 20px; cursor:pointer; border-radius:5px;}
+.success {padding:20px 10px;}
+.success h3 {font-size:30px; margin-bottom:10px;}
+.success p {font-size:14px;}
+.success a {color:#00b38c;}
+.highway {display:inline-block; margin-right:20px;}
+.func {padding:10px; overflow:hidden;}
+.func a {display:block; width:50%; float:left; line-height:36px; text-align:center; color:#FFF; text-decoration:none; font-size:16px; background:#00b38c;}
+.func a:last-child {background:#00b0f0;}
+.func i {margin-right:10px;}
+.full {width:100%!important; background:#00b38c!important;}

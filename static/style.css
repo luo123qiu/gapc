@@ -13,7 +13,7 @@ table {border-collapse:collapse; border-spacing:0;}
 .menu {width:50px; float:left; position:relative; z-index:1;}
 .menu li a {display:block; text-align:center; line-height:40px; color:#666;}
 .menu .active a {background:#fff; color:#0476d9; box-shadow:0 0 3px rgba(0,0,0,.1);}
-.bd {margin-left:50px; height:100%; background:#fff; position:relative; z-index:2; overflow-x:hidden; overflow-y:auto;}
+.bd {margin-left:50px; height:100%; background:#fff; position:relative; z-index:2; overflow-x:hidden; overflow-y:auto; -webkit-overflow-scrolling:touch;}
 .list {padding:0 0 0 10px;}
 .list li {border-bottom:.5px solid #ddd; padding:15px 10px 15px 5px;}
 .list li:last-child {border:0;}

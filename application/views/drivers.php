@@ -12,9 +12,9 @@
 </head>
 <body>
 <ul class="menu">
-    <li class="<?php if ($cur == 'driver') {echo 'active';} ?>"><a href="/">拼车</a></li>
-    <li class="<?php if ($cur == 'post') {echo 'active';} ?>"><a href="/post">发布</a></li>
-    <li class="<?php if ($cur == 'about') {echo 'active';} ?>"><a href="/about">须知</a></li>
+    <li class="<?php if ($cur == 'driver') {echo 'active';} ?>"><a href="<?php echo $base_url; ?>">拼车</a></li>
+    <li class="<?php if ($cur == 'post') {echo 'active';} ?>"><a href="<?php echo $base_url; ?>index.php/post">发布</a></li>
+    <li class="<?php if ($cur == 'about') {echo 'active';} ?>"><a href="<?php echo $base_url; ?>index.php/about">须知</a></li>
 </ul>
 <div class="bd">
     <ul class="list">

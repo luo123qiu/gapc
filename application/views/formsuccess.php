@@ -12,7 +12,7 @@
 </head>
 <body>
 <div class="tip">
-    <a href="/">
+    <a href="<?php echo $base_url; ?>">
         <div class="tipicon ok"><i class="iconfont icon-zhengque1"></i></div>
         <div class="tiptxt">发布成功</div>
         <div class="tipback">点击返回</div>

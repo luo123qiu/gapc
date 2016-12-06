@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="tip">
-        <a href="/post">
+        <a href="<?php echo $base_url; ?>/index.php/post">
         <div class="tipicon error"><i class="iconfont icon-cuowu_6FA7F9"></i></div>
         <div class="tiptxt">请不要发重复信息</div>
         <div class="tipback">点击返回</div>

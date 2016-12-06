@@ -35,7 +35,7 @@
                     <option value="天顺家园" <?php echo  set_select('start_local', '天顺家园'); ?>>天顺家园</option>
                     <option value="绿宸万华城" <?php echo  set_select('start_local', '绿宸万华城'); ?>>绿宸万华城</option>
                     <option value="固安" <?php echo  set_select('start_local', '固安'); ?>>固安</option>
-                </select> 到 <select class="select" name="end_local">
+                </select><br>到 <select class="select" name="end_local">
                     <option value="">请选择</option>
                     <option value="天宫院地铁站" <?php echo  set_select('end_local', '天宫院地铁站'); ?>>天宫院地铁站</option>
                     <option value="生物医药基地" <?php echo  set_select('end_local', '生物医药基地'); ?>>生物医药基地</option>
@@ -56,7 +56,7 @@
                     <option value="<?php echo date("Y-m-d",strtotime("+1 day")); ?>" <?php echo  set_select('go_date', date("Y-m-d",strtotime("+1 day"))); ?>>明天</option>
                     <option value="1" <?php echo  set_select('go_date', '1'); ?>>工作日</option>
                     <option value="2" <?php echo  set_select('go_date', '2'); ?>>每天</option>
-                </select> <select class="select" name="go_time">
+                </select><br><select class="select" name="go_time">
                     <option value="x" <?php echo  set_select('go_time', 'x'); ?>>自行填写</option>
                     <option value="05:00" <?php echo  set_select('go_time', '05:00'); ?>>05:00</option>
                     <option value="06:00" <?php echo  set_select('go_time', '06:00'); ?>>06:00</option>

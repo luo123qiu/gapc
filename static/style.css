@@ -39,3 +39,6 @@ table {border-collapse:collapse; border-spacing:0;}
 .tipicon.ok {color:#0476d9}
 .tiptxt {text-align:center; font-size:18px; color:#000;}
 .tipback {text-align:center; font-size:12px; color:#999; margin-top:20px;}
+
+.ol {margin:0 0 0 30px; padding:10px 10px 0 0;}
+.ol li {padding-bottom:10px;}

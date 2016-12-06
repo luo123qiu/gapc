@@ -77,7 +77,7 @@
                     <option value="21:00" <?php echo  set_select('go_time', '21:00'); ?>>21:00</option>
                     <option value="22:00" <?php echo  set_select('go_time', '22:00'); ?>>22:00</option>
                     <option value="23:00" <?php echo  set_select('go_time', '23:00'); ?>>23:00</option>
-                </select> <input type="input" class="input" size="8" maxlength="10" placeholder="00:00" name="go_time_customize" value="<?php echo set_value('go_time_customize'); ?>"></td>
+                </select> <input type="input" class="input" size="8" maxlength="10" placeholder="如18:30" name="go_time_customize" value="<?php echo set_value('go_time_customize'); ?>"></td>
             </tr>
             <tr>
                 <td>高速：</td>

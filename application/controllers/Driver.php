@@ -14,10 +14,12 @@ class Driver extends CI_Controller {
 
     public function index()
     {
+        $curpage = $this->router->class;
             //根据数据模型获取数据
         $data = array(
             'driver' => $this->driver_model->get(),
-            'base_url' => $this->config->item('base_url')
+            'base_url' => $this->config->item('base_url'),
+            'cur' => $curpage
         );
         //加载视图文件
         $this->load->view('drivers',$data);

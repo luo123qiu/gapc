@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="<?php echo $base_url; ?>static/style.css">
 </head>
 <body>
-    <div class="topline"></div>
-    <div class="success">
-        <h3>请不要发重复信息</h3>
-    </div>
-    <div class="func">
-        <a class="full" href="http://uedethan.com/gapc/index.php/post"><i class="iconfont icon-fanhui"></i>返回</a>
+    <div class="tip">
+        <a href="/post">
+        <div class="tipicon error"><i class="iconfont icon-cuowu_6FA7F9"></i></div>
+        <div class="tiptxt">请不要发重复信息</div>
+        <div class="tipback">点击返回</div>
+        </a>
     </div>
 </body>
 </html>

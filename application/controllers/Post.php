@@ -8,6 +8,7 @@ class Post extends CI_Controller {
         $this->load->helper(array('form', 'url'));
 
         $this->load->library('form_validation');
+        $curpage = $this->router->class;
         $this->form_validation->set_rules('start_local', '起点', 'required',
             array('required' => '请选择起点')
         );
@@ -23,7 +24,8 @@ class Post extends CI_Controller {
         if ($this->form_validation->run() == FALSE)
         {
             $data = array(
-                'base_url' => $this->config->item('base_url')
+                'base_url' => $this->config->item('base_url'),
+                'cur' => $curpage
             );
             $this->load->view('post',$data);
         }

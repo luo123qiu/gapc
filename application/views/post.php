@@ -11,10 +11,12 @@
     <link rel="stylesheet" href="<?php echo $base_url; ?>static/style.css">
 </head>
 <body>
-    <div class="topline"></div>
-    <div class="func">
-        <a class="full" href="http://uedethan.com/gapc/"><i class="iconfont icon-fanhui"></i>返回</a>
-    </div>
+<ul class="menu">
+    <li class="<?php if ($cur == 'driver') {echo 'active';} ?>"><a href="/">拼车</a></li>
+    <li class="<?php if ($cur == 'post') {echo 'active';} ?>"><a href="/post">发布</a></li>
+    <li class="<?php if ($cur == 'about') {echo 'active';} ?>"><a href="/about">须知</a></li>
+</ul>
+<div class="bd">
     <?php echo validation_errors(); ?>
     <?php echo form_open('post'); ?>
     <?php date_default_timezone_set("PRC"); ?>
@@ -52,7 +54,7 @@
                 <td><select class="select" name="go_date">
                     <option value="<?php echo date('Y-m-d'); ?>" <?php echo  set_select('go_date', date('Y-m-d')); ?>>今天</option>
                     <option value="<?php echo date("Y-m-d",strtotime("+1 day")); ?>" <?php echo  set_select('go_date', date("Y-m-d",strtotime("+1 day"))); ?>>明天</option>
-                    <option value="1" <?php echo  set_select('go_date', '1'); ?>>每工作日</option>
+                    <option value="1" <?php echo  set_select('go_date', '1'); ?>>工作日</option>
                     <option value="2" <?php echo  set_select('go_date', '2'); ?>>每天</option>
                 </select> <select class="select" name="go_time">
                     <option value="x" <?php echo  set_select('go_time', 'x'); ?>>自行填写</option>
@@ -96,6 +98,7 @@
             </tr>
         </table>
     </form>
+</div>
 <script src="<?php echo $base_url; ?>static/zepto.min.js"></script>
 <script>
 ;(function($){

@@ -11,23 +11,24 @@
     <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
-    <div class="topline"></div>
-    <div class="func">
-        <a href="http://uedethan.com/gapc/"><i class="iconfont icon-shuaxin"></i>刷新</a>
-        <a href="http://uedethan.com/gapc/index.php/post"><i class="iconfont icon-xiao64"></i>发布</a>
-    </div>
+<ul class="menu">
+    <li class="<?php if ($cur == 'driver') {echo 'active';} ?>"><a href="/">拼车</a></li>
+    <li class="<?php if ($cur == 'post') {echo 'active';} ?>"><a href="/post">发布</a></li>
+    <li class="<?php if ($cur == 'about') {echo 'active';} ?>"><a href="/about">须知</a></li>
+</ul>
+<div class="bd">
     <ul class="list">
-    <?php date_default_timezone_set("PRC"); ?>
-    <?php foreach($driver as $list):?>
+        <?php date_default_timezone_set("PRC"); ?>
+        <?php foreach($driver as $list):?>
         <li>
-            <div class="list-contact"><a href="tel:<?=$list['contact']?>"><i class="iconfont icon-dianhua"></i></a></div>
-            <div class="list-bd">
-                <div class="list-start"><?=$list['start_local']?></div>
-                <div class="list-arrow"><i class="iconfont icon-youjiantou"></i></div>
-                <div class="list-end"><?=$list['end_local']?></div>
+            <div class="call"><a href="tel:<?=$list['contact']?>"><i class="iconfont icon-dianhua2"></i></a></div>
+            <div class="local">
+                <span><?=$list['start_local']?></span>
+                <span class="arrow"><i class="iconfont icon-zhankaijiantou"></i></span>
+                <span><?=$list['end_local']?></span>
             </div>
-            <div class="list-meta">
-                <span><i class="iconfont icon-rili"></i><?php
+            <div class="meta">
+                <span class="time"><i class="iconfont icon-clock"></i><?php
                     if ($list['everyday'] == 1):
                         echo '工作日';
                     elseif ($list['everyday'] == 2):
@@ -42,21 +43,22 @@
                         endif;
                     endif;
                     echo ' '.$list['go_time'];
-                ?></span>
+                    ?></span>
                 <?php
-                    if ($list['highway']):
-                        echo '<span><i class="iconfont icon-gaosu"></i>走高速</span>';
-                    else:
-                        echo '<span class="nothighway"><i class="iconfont icon-gaosu"></i>不走高速</span>';
-                    endif;
+                if ($list['highway']):
+                    echo '<span class="tag active">走高速</span>';
+                else:
+                    echo '<span class="tag">不走高速</span>';
+                endif;
                 ?>
             </div>
             <?php if ($list['remark']):
-                echo '<div class="list-remark">'.$list['remark'].'</div>';
-                endif;
-             ?>
+                echo '<div class="remark">'.$list['remark'].'</div>';
+            endif;
+            ?>
         </li>
-    <?php endforeach?>
+        <?php endforeach; ?>
     </ul>
+</div>
 </body>
 </html>

@@ -26,5 +26,14 @@
         <li>拒绝黑车，从我做起。</li>
     </ol>
 </div>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?c72b5e11ce6a7e2de1e25a5d9be7f5f1";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
 </body>
 </html>

@@ -9,7 +9,6 @@ class Driver extends CI_Controller {
         parent::__construct();
             //加载数据模型
         $this->load->model('driver_model');
-       
     }
 
     public function index()

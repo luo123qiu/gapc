@@ -1,0 +1,4 @@
+/* pages/about/about.wxss */
+
+.about {padding:20px;}
+.ablist {padding:10px; line-height:24px; font-size:14px;}

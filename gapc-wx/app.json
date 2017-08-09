@@ -1,0 +1,52 @@
+{
+  "pages":[
+    "pages/drivers/drivers",
+    "pages/passengers/passengers",
+    "pages/post/post",
+    "pages/post_car/post_car",
+    "pages/post_user/post_user",
+    "pages/about/about",
+    "pages/manage/manage",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1aad19",
+    "navigationBarTitleText": "固安拼车",
+    "navigationBarTextStyle":"#fff",
+    "backgroundColor": "#f8f8f8"
+  },
+  "tabBar":{
+    "color": "#888888",
+    "selectedColor": "#1aad19",
+    "backgroundColor": "#F7F7FA",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list":[{
+      "pagePath": "pages/drivers/drivers",
+      "text": "找车",
+      "iconPath": "images/car.png",
+      "selectedIconPath": "images/car_actived.png"
+    },{
+      "pagePath": "pages/passengers/passengers",
+      "text": "找人",
+      "iconPath": "images/user.png",
+      "selectedIconPath": "images/user_actived.png"
+    }, {
+      "pagePath": "pages/post/post",
+      "text": "发布",
+      "iconPath": "images/post.png",
+      "selectedIconPath": "images/post_active.png"
+    }, {
+      "pagePath": "pages/about/about",
+      "text": "说明",
+      "iconPath": "images/description.png",
+      "selectedIconPath": "images/description_actived.png"
+    }, {
+      "pagePath": "pages/manage/manage",
+      "text": "我的",
+      "iconPath": "images/manage.png",
+      "selectedIconPath": "images/manage_actived.png"
+    }]
+  }
+}

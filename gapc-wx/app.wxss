@@ -1,0 +1,113 @@
+/**app.wxss**/
+@import 'style/weui.wxss';
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+.empty {
+  padding: 50px 0;
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  color: #999;
+}
+
+.list {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.callbox {
+  overflow: hidden;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  border-radius: 50%;
+  float: left;
+}
+
+.avatar image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.info {
+  margin-left: 45px;
+}
+
+.local {
+  overflow: hidden;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.start, .end {
+  display: inline-block;
+}
+
+.local-line {
+  display: inline-block;
+  width: 15px;
+  height: 2px;
+  background: #ddd;
+  overflow: hidden;
+  vertical-align: middle;
+  margin: 0 20px;
+}
+
+.remark {
+  font-size: 14px;
+  color: #666;
+}
+
+.metas {
+  color: #999;
+}
+
+.gary {
+  color: #999;
+}
+
+.green {
+  color: #1aad19;
+}
+
+.red {
+  color: #f00;
+}
+
+.metas text {
+  font-size: 12px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.exchange {
+  width: 16px;
+  height: 16px;
+  padding: 8px;
+  position: absolute;
+  top:50%;
+  left:56px;
+  margin-top:-17px;
+  z-index:3;
+  background-color:#1aad19;
+  border-radius:50%;
+  border:2px solid #fff;
+}
+.exchange image {
+  width:16px;
+  height:16px;
+  display:block;
+}

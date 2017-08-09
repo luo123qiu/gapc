@@ -1,0 +1,26 @@
+<!--pages/drivers/drivers.wxml-->
+<view class="page">
+  <view wx:if="{{empty == true}}" class="empty">还没有车主发布拼车信息哦~</view>
+  <view class="list" wx:for="{{lists}}" wx:key="item">
+    <view class="callbox" bindtap="call" data-openid="{{item.openid}}" data-index="{{index}}" data-id="{{item.id}}" data-contact="{{item.contact}}">
+      <view class="avatar">
+        <image src="{{item.avatar}}"></image>
+      </view>
+      <view class="info">
+        <view class="local">
+          <view class="start">{{item.start_local}}</view>
+          <view class="local-line"></view>
+          <view class="end">{{item.end_local}}</view>
+        </view>
+        <view class="remark">{{item.remark}}</view>
+        <view class="metas">
+          <text wx:if="{{item.highway == 0}}">不走高速</text>
+          <text class="green" wx:else>走高速</text>
+          <text>{{item.seat_count}}个座位</text>
+          <text class="green" wx:if="{{item.go_date == today}}">今天 {{item.go_time}}</text>
+          <text wx:else>{{item.go_date}} {{item.go_time}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

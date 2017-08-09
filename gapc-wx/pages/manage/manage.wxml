@@ -1,0 +1,6 @@
+<!--pages/manage/manage.wxml-->
+<view class="page">
+  <view class="page__bd">
+    <view class="empty">即将开放，敬请期待~</view>
+  </view>
+</view>

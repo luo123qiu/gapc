@@ -1,0 +1,14 @@
+<!--pages/about/about.wxml-->
+<view class="page">
+  <view class="page__bd">
+    <view class="about">
+      <view class="ablist">1、此小程序(公众号)是为了方便居住在固安，就业在北京的上班族而建立；</view>
+      <view class="ablist">2、对于拼车路线，欢迎您提出合理化建议；</view>
+      <view class="ablist">3、您必须登录后才可以发布拼车信息；</view>
+      <view class="ablist">4、此公众号内发布的拼车信息均由网友自行发布，我们不为其真实性负责，出现任何后果由您自己承担；</view>
+      <view class="ablist">5、原则上我们建议固安至4号线各地铁站拼车价格为 <text class="red">10</text> 至 <text class="red">15</text> 元，超出此价格疑为黑车，建议您不要乘坐；</view>
+      <view class="ablist">6、乘车时，请您自觉系好安全带，哪怕您坐在后排；</view>
+      <view class="ablist">7、拒绝黑车，从我做起。</view>
+    </view>
+  </view>
+</view>

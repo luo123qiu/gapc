@@ -1,0 +1,84 @@
+<view class="page">
+  <view class="weui-cells">
+    <view class="exchange" bindtap="exchangeLocal">
+      <image src="/images/exchange1.png"></image>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">从</view>
+      </view>
+      <view class="weui-cell__bd" style="margin-right:-20px; margin-left:-20px;">
+        <picker bindchange="bindStartLocalChange" value="{{start_local_index}}" range="{{start_local}}">
+          <view class="weui-select">{{start_local[start_local_index]}}</view>
+        </picker>
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">到</view>
+      </view>
+      <view class="weui-cell__bd" style="margin-right:-20px; margin-left:-20px;">
+        <picker bindchange="bindEndLocalChange" value="{{end_local_index}}" range="{{end_local}}">
+          <view class="weui-select">{{end_local[end_local_index]}}</view>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <view class="weui-cells">
+    <view class="weui-cell weui-cell_switch">
+      <view class="weui-cell__bd">走高速</view>
+      <view class="weui-cell__ft">
+        <switch bindchange="bindHighWayChange" />
+      </view>
+    </view>
+  </view>
+  <view class="weui-cells">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">日期</view>
+      </view>
+      <view class="weui-cell__bd">
+        <picker mode="date" value="{{date}}" start="2017-01-01" end="2050-01-01" bindchange="bindDateChange">
+          <view class="weui-input">{{date}}</view>
+        </picker>
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">时间</view>
+      </view>
+      <view class="weui-cell__bd">
+        <picker mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindTimeChange">
+          <view class="weui-input">{{time}}</view>
+        </picker>
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">手机</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" value="{{contact}}" bindinput="bindContactInput" placeholder="不会被公开" />
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">座位数</view>
+      </view>
+      <view class="weui-cell__bd" style="margin-right:-20px; margin-left:-20px;">
+        <picker bindchange="bindSeatCountChange" value="{{seat_count_index}}" range="{{seat_count}}">
+          <view class="weui-select">{{seat_count[seat_count_index]}}</view>
+        </picker>
+      </view>
+    </view>
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <textarea class="weui-textarea" maxlength="100" placeholder="备注说明（选填）" bindinput="bindTxtInput" style="height: 3.3em" />
+        <view class="weui-textarea-counter">{{remarkLength}}/100</view>
+      </view>
+    </view>
+  </view>
+  <view class="weui-btn-area">
+    <button class="weui-btn" type="primary" bindtap="submitPost">提交</button>
+  </view>
+</view>

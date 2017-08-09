@@ -1,0 +1,3 @@
+/* pages/post/post.wxss */
+
+.post_bd {height:100%; padding-top:50%;}

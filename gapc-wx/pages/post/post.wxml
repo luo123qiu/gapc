@@ -1,0 +1,13 @@
+<!--pages/post/post.wxml-->
+<view class="page">
+  <view class="page__bd">
+    <view class="post_bd">
+      <view class="weui-btn-area">
+        <button type="default" bindtap="openCar">我是车主</button>
+      </view>
+      <view class="weui-btn-area">
+        <button type="default" bindtap="openUser">我是乘客</button>
+      </view>
+    </view>
+  </view>
+</view>
